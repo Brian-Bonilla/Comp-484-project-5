@@ -18,7 +18,7 @@ function stopTimer() {
 // Creates the Google Map centered on CSUN campus with all controls disabled
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 17,
+        zoom: 15,
         center: { lat: 34.2414, lng: -118.5289 }, // CSUN campus coordinates
         disableDoubleClickZoom: true, // Prevents default zoom on double-click so we can use it for the game
         gestureHandling: false, // Disables panning and zooming by user gestures
@@ -41,6 +41,7 @@ function initMap() {
 }
 
 // Array of 5 CSUN locations with their coordinates
+
 const locations = [
     {name: "Bookstein Hall", lat: 34.241950341731375, lng: -118.53080514819607},
     {name: "University Library", lat: 34.240043495320116, lng: -118.52921816808438},
