@@ -18,7 +18,7 @@ function stopTimer() {
 // Creates the Google Map centered on CSUN campus with all controls disabled
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
+        zoom: 16,
         center: { lat: 34.2414, lng: -118.5289 }, // CSUN campus coordinates
         disableDoubleClickZoom: true, // Prevents default zoom on double-click so we can use it for the game
         gestureHandling: false, // Disables panning and zooming by user gestures
